@@ -115,7 +115,7 @@ export default function GlossarioPage() {
           />
         </div>
 
-        <div className="flex flex-wrap gap-2 px-5 pb-3">
+        <div className="flex gap-2 px-5 pb-3 overflow-x-auto" style={{ scrollbarWidth: 'none' }}>
 
           {CATEGORIAS.map(cat => (
             <button key={cat} onClick={() => setCategoria(cat)}

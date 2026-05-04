@@ -94,7 +94,7 @@ export default function FlashcardsPage() {
   const progresso = Math.round((atual / cards.length) * 100);
 
   return (
-    <div className="min-h-screen bg-[#080808] p-5 pt-14">
+    <div className="bg-[#080808] p-5 pt-14 flex flex-col" style={{ minHeight: '100dvh' }}>
       <div className="max-w-lg mx-auto">
 
         <div className="flex justify-between items-center mb-6">
@@ -115,7 +115,7 @@ export default function FlashcardsPage() {
         </div>
 
         <div
-          className="bg-[#111] border border-[#1A1A1A] rounded-2xl p-10 text-center cursor-pointer min-h-64 flex flex-col items-center justify-center gap-4 mb-6 hover:border-[#333] transition-all"
+  className="flex-1 bg-[#111] border border-[#1A1A1A] rounded-2xl p-10 text-center cursor-pointer flex flex-col items-center justify-center gap-4 mb-6 hover:border-[#333] transition-all"
           onClick={() => setRevelado(!revelado)}
         >
           {!revelado ? (

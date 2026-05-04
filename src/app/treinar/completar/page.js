@@ -116,8 +116,8 @@ export default function CompletarPage() {
   const pct = (atual / frases.length) * 100;
 
   return (
-    <div className="min-h-screen bg-[#080808] p-5 pt-14">
-      <div className="max-w-lg mx-auto">
+    <div className="bg-[#080808] p-5 pt-14" style={{ minHeight: '100dvh' }}>
+  <div className="max-w-lg mx-auto">
 
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
