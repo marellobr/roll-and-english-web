@@ -8,9 +8,9 @@ export function falar(texto, lang = 'en-US') {
   
   const utterance = new SpeechSynthesisUtterance(texto);
   utterance.lang = lang;
-  utterance.rate = 0.85;
-  utterance.pitch = 1;
-  utterance.volume = 1;
+  utterance.rate = 0.75;
+  utterance.pitch = 0.9;
+  utterance.volume = 0.7;
   
   const vozes = window.speechSynthesis.getVoices();
   const vozEN = vozes.find(v => v.lang === 'en-US' && v.name.includes('Google')) ||
