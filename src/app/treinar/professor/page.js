@@ -69,12 +69,6 @@ export default function ProfessorPage() {
     setFrases(embaralhadas);
   }, [user]);
 
-  useEffect(() => {
-    if (frases[atual]?.fala) {
-      setTimeout(() => falar(frases[atual].fala), 300);
-    }
-  }, [atual, frases]);
-
   function responder(opcao) {
     if (respondido) return;
     setSelecionado(opcao);

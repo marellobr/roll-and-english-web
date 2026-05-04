@@ -21,12 +21,6 @@ export default function FlashcardsPage() {
     carregarCards();
   }, [user]);
 
-  useEffect(() => {
-    if (cards[atual]?.palavra) {
-      setTimeout(() => falar(cards[atual].palavra), 500);
-    }
-  }, [atual, cards]);
-
   function carregarCards() {
     setLoading(true);
     wordsAPI.getVocab()
